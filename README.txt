@@ -1,16 +1,15 @@
-SOCIAL CONNECT v8
+SOCIAL CONNECT v10
 
-Design change:
-- Removed the engineering image from the home-page background.
-- Replaced it with a clean, professional navy/blue engineering hero.
-- Added a subtle technical grid and restrained glow for depth.
-- Added a compact Electrical Engineering identity strip below the hero.
-- The uploaded engineering-banner.png is retained in the package for future use,
-  but it is NOT used as the homepage background.
-- Hamburger menu, profile photo, larger text, skills, projects and social links remain.
+The homepage/hero was redesigned to be much shorter and more professional:
+- Compact two-column desktop hero.
+- Profile photo + name + short introduction on the left.
+- Three small engineering focus cards on the right.
+- No giant empty area and no background photo.
+- Mobile version stacks the same content compactly.
+- Hamburger navigation, larger readable text, education, skills, projects and social links remain.
 
 Upload:
-1. index.html
-2. profile.jpg
+- index.html
+- profile.jpg
 
-engineering-banner.png is optional in v8 because the homepage no longer depends on it.
+engineering-banner.png is optional and not used by the homepage.

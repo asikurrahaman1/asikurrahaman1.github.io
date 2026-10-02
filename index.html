@@ -27,47 +27,55 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(4,16,30,.
 .menu-panel a:hover{background:rgba(255,255,255,.08);color:#67e8f9}
 
 .hero{
- min-height:100vh;position:relative;overflow:hidden;padding:110px 20px 70px;text-align:center;color:#fff;
- display:flex;align-items:flex-start;justify-content:center;
- background:radial-gradient(circle at 18% 20%,rgba(34,211,238,.18),transparent 30%),radial-gradient(circle at 84% 30%,rgba(37,99,235,.24),transparent 34%),linear-gradient(145deg,#041225 0%,#08294a 52%,#06172c 100%);
+ position:relative;overflow:hidden;color:#fff;
+ padding:82px 20px 54px;
+ background:
+ radial-gradient(circle at 8% 18%,rgba(34,211,238,.15),transparent 28%),
+ radial-gradient(circle at 90% 45%,rgba(37,99,235,.20),transparent 32%),
+ linear-gradient(135deg,#041225 0%,#08294a 52%,#061b31 100%);
 }
 .hero:before{
- content:"";position:absolute;inset:0;opacity:.23;
- background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
- background-size:42px 42px;
+ content:"";position:absolute;inset:0;opacity:.16;
+ background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+ background-size:44px 44px;
 }
 .hero:after{
- content:"";position:absolute;width:430px;height:430px;border-radius:50%;
- right:-180px;bottom:-190px;background:rgba(34,211,238,.10);filter:blur(2px);
+ content:"";position:absolute;width:380px;height:380px;border-radius:50%;
+ right:-170px;bottom:-190px;background:rgba(34,211,238,.09);
 }
-.hero-inner{position:relative;z-index:2;max-width:900px;margin:auto}
-.eyebrow{display:inline-flex;padding:7px 14px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(125,211,252,.36);color:#a5f3fc;font-size:12px;font-weight:800;letter-spacing:1.3px}
-.avatar{width:150px;height:150px;margin:22px auto 18px;border-radius:50%;overflow:hidden;border:6px solid rgba(255,255,255,.96);box-shadow:0 18px 48px rgba(0,0,0,.42)}
+.hero-inner{
+ position:relative;z-index:2;max-width:1120px;margin:auto;
+ display:grid;grid-template-columns:minmax(0,1.55fr) minmax(290px,.75fr);
+ gap:48px;align-items:center;
+}
+.hero-main{display:grid;grid-template-columns:142px 1fr;gap:25px;align-items:center}
+.hero-main .eyebrow{grid-column:1/-1;justify-self:start}
+.avatar{width:142px;height:142px;margin:0;border-radius:50%;overflow:hidden;border:5px solid rgba(255,255,255,.96);box-shadow:0 15px 35px rgba(0,0,0,.38)}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(48px,9vw,78px);line-height:1.03;letter-spacing:-2px;text-shadow:0 8px 25px rgba(0,0,0,.28)}
-.hero h2{font-size:20px;color:#dff1ff;font-weight:600;margin:12px 0}
-.hero .intro{max-width:720px;margin:auto;color:#d1dfec;font-size:17px;line-height:1.75}
-.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:27px 0 8px}
-.btn{min-height:47px;padding:0 21px;border-radius:13px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:14px;font-weight:800}
-.primary{background:linear-gradient(135deg,#2563eb,#0891b2);color:#fff;box-shadow:0 12px 28px rgba(0,0,0,.28)}
-.secondary{background:rgba(255,255,255,.94);color:#12345b;border:1px solid #fff}
+.hero-copy h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(45px,5.6vw,70px);line-height:1.02;letter-spacing:-1.8px;text-shadow:0 6px 20px rgba(0,0,0,.22)}
+.hero-copy h2{font-size:19px;color:#dff1ff;font-weight:650;margin:8px 0}
+.hero-copy .intro{max-width:650px;color:#c9dbea;font-size:16px;line-height:1.6}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+.hero-meta span{font-size:12px;font-weight:700;color:#c9e5f5;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:17px 0 0}
+.btn{min-height:44px;padding:0 18px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:14px;font-weight:800}
+.primary{background:linear-gradient(135deg,#2563eb,#0891b2);color:#fff;box-shadow:0 10px 22px rgba(0,0,0,.25)}
+.secondary{background:rgba(255,255,255,.95);color:#12345b;border:1px solid #fff}
+.hero-side{
+ background:rgba(3,17,34,.42);border:1px solid rgba(255,255,255,.13);
+ border-radius:24px;padding:19px;box-shadow:0 18px 40px rgba(0,0,0,.18);
+}
+.mini-title{font-size:10px;letter-spacing:2px;color:#67e8f9;font-weight:900;margin-bottom:11px}
+.focus-card{display:flex;align-items:center;gap:12px;padding:12px;border-radius:15px;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.09);margin-bottom:9px}
+.focus-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:900;font-size:19px;flex:none}
+.focus-icon.blue{background:linear-gradient(135deg,#2563eb,#06b6d4)}
+.focus-icon.orange{background:linear-gradient(135deg,#f97316,#ef4444)}
+.focus-icon.green{background:linear-gradient(135deg,#16a34a,#84cc16)}
+.focus-card strong{display:block;font-size:14px;color:#f4f9ff}.focus-card small{display:block;color:#9fb5ca;font-size:11px;margin-top:1px}
+.hero-note{display:flex;gap:11px;align-items:center;margin-top:13px;padding-top:13px;border-top:1px solid rgba(255,255,255,.10)}
+.hero-note>span{font-family:'Playfair Display',Georgia,serif;color:#5eeaff;font-size:25px}
+.hero-note b{display:block;font-size:12px}.hero-note small{display:block;color:#9fb5ca;font-size:10px;margin-top:1px}
 
-.engineering-strip{
- background:linear-gradient(90deg,#071a32,#0b3154 50%,#082f35);
- border-top:1px solid rgba(255,255,255,.08);
- border-bottom:1px solid rgba(255,255,255,.08);
- color:#fff;
-}
-.engineering-strip-inner{
- max-width:1120px;margin:auto;padding:18px 20px;display:flex;align-items:center;justify-content:center;gap:14px;
-}
-.engineering-strip-icon{
- width:43px;height:43px;border-radius:13px;display:grid;place-items:center;
- background:linear-gradient(135deg,#2563eb,#06b6d4);font-size:20px;
- box-shadow:0 7px 20px rgba(0,0,0,.2);
-}
-.engineering-strip strong{display:block;font-size:13px;letter-spacing:1.5px}
-.engineering-strip span{display:block;color:#b9cee2;font-size:12px;margin-top:1px}
 section{padding:82px 20px}
 .section-inner{max-width:1120px;margin:auto}
 .section-head{margin-bottom:34px}
@@ -130,9 +138,9 @@ section{padding:82px 20px}
 footer{background:#041120;color:#91a6bf;text-align:center;padding:26px;font-size:13px}
 
 @media(max-width:800px){
- body{font-size:17px}.hero{min-height:100svh;padding:101px 14px 0}
+ body{font-size:17px}.hero{padding:84px 14px 36px}
  
- .avatar{width:121px;height:121px}.hero h1{font-size:47px}.hero h2{font-size:18px}.hero .intro{font-size:16px}.engineering-banner{display:none}.engineering-strip-inner{padding:16px 14px}.engineering-strip strong{font-size:11px}.engineering-strip span{font-size:11px}
+ .avatar{width:108px;height:108px}.hero h1{font-size:43px}.hero h2{font-size:18px}.hero .intro{font-size:15px;line-height:1.55}.engineering-banner{display:none}.engineering-strip-inner{padding:16px 14px}.engineering-strip strong{font-size:11px}.engineering-strip span{font-size:11px}
  section{padding:61px 14px}.section-head h2{font-size:33px}.section-head p{font-size:15px}
  .about-grid,.skills,.projects,.social-grid{grid-template-columns:1fr}
  .about-card,.stats-card{padding:24px}.about-card h3{font-size:25px}.about-card p{font-size:16px}
@@ -141,6 +149,26 @@ footer{background:#041120;color:#91a6bf;text-align:center;padding:26px;font-size
  .project{padding:23px}.project h3{font-size:20px}.project p{font-size:15px}
  .social{padding:17px}.social strong{font-size:15px}.social small{font-size:13px}
  .cta h2{font-size:34px}.cta p{font-size:15px}
+
+ .hero{padding:76px 14px 34px}
+ .hero-inner{display:block}
+ .hero-main{display:block;text-align:center}
+ .hero-main .eyebrow{display:inline-flex;margin-bottom:15px}
+ .avatar{width:108px;height:108px;margin:0 auto 13px}
+ .hero-copy h1{font-size:43px}
+ .hero-copy h2{font-size:17px;margin:7px 0}
+ .hero-copy .intro{font-size:14px;line-height:1.5;max-width:520px;margin:auto}
+ .hero-meta{justify-content:center;margin-top:11px}
+ .hero-meta span{font-size:10px;padding:5px 9px}
+ .actions{justify-content:center;margin-top:14px}
+ .btn{min-height:42px;font-size:13px;padding:0 15px}
+ .hero-side{margin:22px auto 0;max-width:520px;padding:14px;border-radius:19px;text-align:left}
+ .mini-title{margin-bottom:8px}
+ .focus-card{padding:9px;margin-bottom:7px}
+ .focus-icon{width:36px;height:36px;border-radius:10px;font-size:16px}
+ .focus-card strong{font-size:13px}.focus-card small{font-size:10px}
+ .hero-note{margin-top:9px;padding-top:9px}
+
 }
 </style>
 </head>
@@ -161,24 +189,44 @@ footer{background:#041120;color:#91a6bf;text-align:center;padding:26px;font-size
 
 <section class="hero">
 <div class="hero-inner">
-<div class="eyebrow">PERSONAL • PROFESSIONAL • SOCIAL</div>
-<div class="avatar"><img src="profile.jpg" alt="Asikur Rahaman"></div>
-<h1>Asikur Rahaman</h1>
-<h2>Final-Year Electrical Engineering Student</h2>
-<p class="intro">Electrical Engineering student at Aliah University, exploring power systems, simulation, solar PV, technology and practical engineering projects.</p>
-<div class="actions"><a class="btn primary" href="#connect">Connect With Me</a><a class="btn secondary" href="#projects">Explore My Work</a></div>
+  <div class="hero-main">
+    <div class="eyebrow">ELECTRICAL ENGINEERING • PORTFOLIO</div>
+    <div class="avatar"><img src="profile.jpg" alt="Asikur Rahaman"></div>
+    <div class="hero-copy">
+      <h1>Asikur Rahaman</h1>
+      <h2>Final-Year Electrical Engineering Student</h2>
+      <p class="intro">Building practical skills in power systems, simulation, solar PV and electrical engineering projects.</p>
+      <div class="hero-meta">
+        <span>🎓 Aliah University</span>
+        <span>📍 Kolkata, West Bengal</span>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="#connect">Connect With Me</a>
+        <a class="btn secondary" href="#projects">View Projects</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-side">
+    <div class="mini-title">CURRENT FOCUS</div>
+    <div class="focus-card">
+      <div class="focus-icon blue">⚡</div>
+      <div><strong>Power Systems</strong><small>Analysis & engineering</small></div>
+    </div>
+    <div class="focus-card">
+      <div class="focus-icon orange">∿</div>
+      <div><strong>MATLAB / Simulink</strong><small>Modelling & simulation</small></div>
+    </div>
+    <div class="focus-card">
+      <div class="focus-icon green">☀</div>
+      <div><strong>Solar PV</strong><small>Design & calculation</small></div>
+    </div>
+    <div class="hero-note"><span>01</span><div><b>Learning → Building → Improving</b><small>Electrical engineering journey</small></div></div>
+  </div>
 </div>
 </section>
 
-<section class="engineering-strip">
-  <div class="engineering-strip-inner">
-    <div class="engineering-strip-icon">⚡</div>
-    <div>
-      <strong>ELECTRICAL ENGINEERING</strong>
-      <span>Power Systems · Simulation · Solar PV · Practical Projects</span>
-    </div>
-  </div>
-</section>
+
 
 <section id="about" class="about-section"><div class="section-inner">
 <div class="section-head"><div class="kicker">01 · About</div><h2>A little about me</h2><p>My academic background and current focus.</p></div>
