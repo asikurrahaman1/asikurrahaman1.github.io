@@ -1,9 +1,13 @@
-SOCIAL CONNECT — ASIKUR RAHAMAN
+SOCIAL CONNECT v4
 
-Version 3 includes the uploaded profile photo as profile.jpg.
+Upload BOTH files to the GitHub Pages repository:
+- index.html
+- profile.jpg
 
-To change the photo later:
-1. Replace profile.jpg with another photo.
-2. Keep the filename profile.jpg, or update the img src in index.html.
+This version improves mobile readability, social buttons, skill cards, and adds a Projects section.
 
-The rest of the website remains editable, including social links, GitHub, skills and education.
+To update later:
+- Replace profile.jpg to change the profile photo.
+- Edit social URLs in index.html.
+- Replace the GitHub href="#" when a GitHub profile is created.
+- Add project cards inside the Projects section.
