@@ -1,11 +1,16 @@
-SOCIAL CONNECT v5
+SOCIAL CONNECT v6
 
-Major visual redesign:
-- Multi-color section backgrounds
-- Different typography and hierarchy between sections
-- Better mobile spacing and readability
-- Colorful tool badges/logos for every technical skill
-- More polished About, Education, Skills, Projects and Connect sections
+Changes:
+- Larger normal text, especially on mobile.
+- Dark navy professional hero/header.
+- New uploaded electrical-engineering banner displayed beneath the profile area.
+- Dark technical-skills section for stronger contrast.
+- Light/mid/dark sections alternate for a more professional portfolio feel.
+- Existing profile photo and social links retained.
 
-Upload index.html and profile.jpg to the GitHub Pages repository.
-Keep profile.jpg in the same folder as index.html.
+Upload:
+1. index.html
+2. profile.jpg
+3. engineering-banner.png
+
+All three should be in the root of the GitHub Pages repository.
