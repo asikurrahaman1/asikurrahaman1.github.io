@@ -1,16 +1,16 @@
-SOCIAL CONNECT v6
+SOCIAL CONNECT v7
 
 Changes:
-- Larger normal text, especially on mobile.
-- Dark navy professional hero/header.
-- New uploaded electrical-engineering banner displayed beneath the profile area.
-- Dark technical-skills section for stronger contrast.
-- Light/mid/dark sections alternate for a more professional portfolio feel.
-- Existing profile photo and social links retained.
+- Added a three-line hamburger menu in the top-right corner.
+- Navigation opens as a compact dropdown.
+- Engineering banner is no longer displayed as a separate photo/card.
+- engineering-banner.png is blended into the HOME/HERO background with dark overlays and gradient fading.
+- Larger readable text and stronger contrast are retained.
+- Existing profile photo and real social links are retained.
 
-Upload:
+Upload all three assets:
 1. index.html
 2. profile.jpg
 3. engineering-banner.png
 
-All three should be in the root of the GitHub Pages repository.
+All files must stay in the root of the GitHub Pages repository.
