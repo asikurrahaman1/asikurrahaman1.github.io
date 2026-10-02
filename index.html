@@ -29,16 +29,16 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(4,16,30,.
 .hero{
  min-height:100vh;position:relative;overflow:hidden;padding:110px 20px 70px;text-align:center;color:#fff;
  display:flex;align-items:flex-start;justify-content:center;
- background:#06172c url("engineering-banner.png") center 62%/cover no-repeat;
+ background:radial-gradient(circle at 18% 20%,rgba(34,211,238,.18),transparent 30%),radial-gradient(circle at 84% 30%,rgba(37,99,235,.24),transparent 34%),linear-gradient(145deg,#041225 0%,#08294a 52%,#06172c 100%);
 }
 .hero:before{
- content:"";position:absolute;inset:0;
- background:
- linear-gradient(180deg,rgba(3,14,28,.80) 0%,rgba(4,17,33,.67) 28%,rgba(5,20,37,.72) 58%,rgba(6,23,44,.96) 100%);
+ content:"";position:absolute;inset:0;opacity:.23;
+ background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+ background-size:42px 42px;
 }
 .hero:after{
- content:"";position:absolute;inset:auto 0 0;height:37%;
- background:linear-gradient(180deg,transparent,#071a32);
+ content:"";position:absolute;width:430px;height:430px;border-radius:50%;
+ right:-180px;bottom:-190px;background:rgba(34,211,238,.10);filter:blur(2px);
 }
 .hero-inner{position:relative;z-index:2;max-width:900px;margin:auto}
 .eyebrow{display:inline-flex;padding:7px 14px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(125,211,252,.36);color:#a5f3fc;font-size:12px;font-weight:800;letter-spacing:1.3px}
@@ -52,6 +52,22 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(4,16,30,.
 .primary{background:linear-gradient(135deg,#2563eb,#0891b2);color:#fff;box-shadow:0 12px 28px rgba(0,0,0,.28)}
 .secondary{background:rgba(255,255,255,.94);color:#12345b;border:1px solid #fff}
 
+.engineering-strip{
+ background:linear-gradient(90deg,#071a32,#0b3154 50%,#082f35);
+ border-top:1px solid rgba(255,255,255,.08);
+ border-bottom:1px solid rgba(255,255,255,.08);
+ color:#fff;
+}
+.engineering-strip-inner{
+ max-width:1120px;margin:auto;padding:18px 20px;display:flex;align-items:center;justify-content:center;gap:14px;
+}
+.engineering-strip-icon{
+ width:43px;height:43px;border-radius:13px;display:grid;place-items:center;
+ background:linear-gradient(135deg,#2563eb,#06b6d4);font-size:20px;
+ box-shadow:0 7px 20px rgba(0,0,0,.2);
+}
+.engineering-strip strong{display:block;font-size:13px;letter-spacing:1.5px}
+.engineering-strip span{display:block;color:#b9cee2;font-size:12px;margin-top:1px}
 section{padding:82px 20px}
 .section-inner{max-width:1120px;margin:auto}
 .section-head{margin-bottom:34px}
@@ -114,9 +130,9 @@ section{padding:82px 20px}
 footer{background:#041120;color:#91a6bf;text-align:center;padding:26px;font-size:13px}
 
 @media(max-width:800px){
- body{font-size:17px}.hero{min-height:100svh;padding:101px 14px 0;background-position:center center}
- .hero:before{background:linear-gradient(180deg,rgba(2,13,27,.82),rgba(4,18,35,.72) 42%,rgba(6,23,44,.94) 100%)}
- .avatar{width:121px;height:121px}.hero h1{font-size:47px}.hero h2{font-size:18px}.hero .intro{font-size:16px}.engineering-banner{display:none}
+ body{font-size:17px}.hero{min-height:100svh;padding:101px 14px 0}
+ 
+ .avatar{width:121px;height:121px}.hero h1{font-size:47px}.hero h2{font-size:18px}.hero .intro{font-size:16px}.engineering-banner{display:none}.engineering-strip-inner{padding:16px 14px}.engineering-strip strong{font-size:11px}.engineering-strip span{font-size:11px}
  section{padding:61px 14px}.section-head h2{font-size:33px}.section-head p{font-size:15px}
  .about-grid,.skills,.projects,.social-grid{grid-template-columns:1fr}
  .about-card,.stats-card{padding:24px}.about-card h3{font-size:25px}.about-card p{font-size:16px}
@@ -152,6 +168,16 @@ footer{background:#041120;color:#91a6bf;text-align:center;padding:26px;font-size
 <p class="intro">Electrical Engineering student at Aliah University, exploring power systems, simulation, solar PV, technology and practical engineering projects.</p>
 <div class="actions"><a class="btn primary" href="#connect">Connect With Me</a><a class="btn secondary" href="#projects">Explore My Work</a></div>
 </div>
+</section>
+
+<section class="engineering-strip">
+  <div class="engineering-strip-inner">
+    <div class="engineering-strip-icon">⚡</div>
+    <div>
+      <strong>ELECTRICAL ENGINEERING</strong>
+      <span>Power Systems · Simulation · Solar PV · Practical Projects</span>
+    </div>
+  </div>
 </section>
 
 <section id="about" class="about-section"><div class="section-inner">

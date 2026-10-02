@@ -1,16 +1,16 @@
-SOCIAL CONNECT v7
+SOCIAL CONNECT v8
 
-Changes:
-- Added a three-line hamburger menu in the top-right corner.
-- Navigation opens as a compact dropdown.
-- Engineering banner is no longer displayed as a separate photo/card.
-- engineering-banner.png is blended into the HOME/HERO background with dark overlays and gradient fading.
-- Larger readable text and stronger contrast are retained.
-- Existing profile photo and real social links are retained.
+Design change:
+- Removed the engineering image from the home-page background.
+- Replaced it with a clean, professional navy/blue engineering hero.
+- Added a subtle technical grid and restrained glow for depth.
+- Added a compact Electrical Engineering identity strip below the hero.
+- The uploaded engineering-banner.png is retained in the package for future use,
+  but it is NOT used as the homepage background.
+- Hamburger menu, profile photo, larger text, skills, projects and social links remain.
 
-Upload all three assets:
+Upload:
 1. index.html
 2. profile.jpg
-3. engineering-banner.png
 
-All files must stay in the root of the GitHub Pages repository.
+engineering-banner.png is optional in v8 because the homepage no longer depends on it.
