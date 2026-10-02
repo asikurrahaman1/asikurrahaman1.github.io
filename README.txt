@@ -1,13 +1,11 @@
-SOCIAL CONNECT v4
+SOCIAL CONNECT v5
 
-Upload BOTH files to the GitHub Pages repository:
-- index.html
-- profile.jpg
+Major visual redesign:
+- Multi-color section backgrounds
+- Different typography and hierarchy between sections
+- Better mobile spacing and readability
+- Colorful tool badges/logos for every technical skill
+- More polished About, Education, Skills, Projects and Connect sections
 
-This version improves mobile readability, social buttons, skill cards, and adds a Projects section.
-
-To update later:
-- Replace profile.jpg to change the profile photo.
-- Edit social URLs in index.html.
-- Replace the GitHub href="#" when a GitHub profile is created.
-- Add project cards inside the Projects section.
+Upload index.html and profile.jpg to the GitHub Pages repository.
+Keep profile.jpg in the same folder as index.html.
