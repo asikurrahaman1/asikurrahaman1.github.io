@@ -126,6 +126,16 @@ section{padding:82px 20px}
 .project h3{font-family:'Playfair Display',Georgia,serif;font-size:22px}.project p{font-size:15px;color:var(--muted)}
 .project-tag{display:inline-block;margin-top:16px;padding:6px 10px;border-radius:999px;background:#e0f2fe;color:#0369a1;font-size:11px;font-weight:800}
 
+.entrepreneurship-section{background:linear-gradient(135deg,#f0fdf4 0%,#eef8ff 52%,#fff7ed 100%)}
+.entrepreneurship-card{max-width:950px;margin:0 auto;display:flex;gap:26px;align-items:flex-start;background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.09);border-radius:28px;padding:30px;box-shadow:0 18px 45px rgba(15,23,42,.09);position:relative;overflow:hidden}
+.entrepreneurship-card:after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;right:-90px;top:-100px;background:rgba(34,197,94,.08)}
+.entre-icon{width:68px;height:68px;border-radius:20px;display:grid;place-items:center;flex:none;font-size:31px;background:linear-gradient(135deg,#16a34a,#84cc16);box-shadow:0 10px 24px rgba(22,163,74,.20)}
+.entre-content{position:relative;z-index:1}.entre-label{font-size:10px;letter-spacing:2px;color:#15803d;font-weight:900}
+.entre-content h3{font-family:'Playfair Display',Georgia,serif;font-size:28px;margin-top:4px}
+.entre-content p{color:#53657d;font-size:15px;line-height:1.7;margin-top:8px;max-width:790px}
+.entre-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.entre-points span{font-size:12px;font-weight:750;color:#24523b;background:#ecfdf5;border:1px solid #bbf7d0;border-radius:999px;padding:7px 10px}
+.entre-link{display:inline-flex;align-items:center;gap:9px;margin-top:20px;padding:11px 16px;border-radius:12px;background:linear-gradient(135deg,#15803d,#0f766e);color:#fff;text-decoration:none;font-size:13px;font-weight:800;box-shadow:0 9px 20px rgba(15,118,110,.20)}
+.entre-link:hover{transform:translateY(-2px)}
 .connect-section{background:linear-gradient(135deg,#e7f3ff,#fff0f7 52%,#e9fbf4)}
 .social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
 .social{background:#fff;border:1px solid var(--line);border-radius:19px;padding:18px;display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);box-shadow:0 9px 25px rgba(15,23,42,.065);transition:.2s}
@@ -151,6 +161,10 @@ footer{background:#041120;color:#91a6bf;text-align:center;padding:26px;font-size
  .cta h2{font-size:34px}.cta p{font-size:15px}
 
  .hero{padding:76px 14px 34px}
+ .entrepreneurship-card{display:block;padding:22px;border-radius:22px}
+.entre-icon{width:56px;height:56px;border-radius:17px;font-size:26px;margin-bottom:14px}
+.entre-content h3{font-size:23px}.entre-content p{font-size:14px;line-height:1.65}
+.entre-points{gap:6px}.entre-points span{font-size:11px;padding:6px 8px}.entre-link{font-size:12px;margin-top:16px}
  .hero-inner{display:block}
  .hero-main{display:block;text-align:center}
  .hero-main .eyebrow{display:inline-flex;margin-bottom:15px}
@@ -181,7 +195,7 @@ footer{background:#041120;color:#91a6bf;text-align:center;padding:26px;font-size
 <span></span><span></span><span></span>
 </button>
 <nav class="menu-panel" id="menuPanel">
-<a href="#about">About</a><a href="#education">Education</a><a href="#skills">Technical Skills</a><a href="#projects">Projects</a><a href="#connect">Connect</a>
+<a href="#about">About</a><a href="#education">Education</a><a href="#skills">Technical Skills</a><a href="#projects">Projects</a><a href="#entrepreneurship">Entrepreneurship</a><a href="#connect">Connect</a>
 </nav>
 </div>
 </div>
@@ -266,8 +280,30 @@ footer{background:#041120;color:#91a6bf;text-align:center;padding:26px;font-size
 <div class="project"><div class="project-top"><div class="project-icon">⚡</div><h3>Electrical Engineering Simulations</h3></div><p>Simulation and circuit-development work using MATLAB, Simulink and Proteus.</p><span class="project-tag">SIMULATION</span></div>
 </div></div></section>
 
+<section id="entrepreneurship" class="entrepreneurship-section">
+<div class="section-inner">
+<div class="section-head center">
+<div class="kicker">05 · Entrepreneurship</div>
+<h2>Building Fasal Mandi</h2>
+<p>An idea focused on creating a fairer connection between farmers and markets.</p>
+</div>
+<div class="entrepreneurship-card">
+<div class="entre-icon">🌾</div>
+<div class="entre-content">
+<div class="entre-label">MY STARTUP IDEA</div>
+<h3>Fasal Mandi — Farmer's Choice</h3>
+<p>I am working on Fasal Mandi, a farmer-first marketplace idea where farmers can list paddy, wheat, mustard and other grains, get their produce checked, arrange pickup and receive a transparent market-linked offer. The concept also connects buyers with quality grain and value-added food products.</p>
+<div class="entre-points">
+<span>🌾 Direct farmer procurement</span><span>⚖️ Transparent pricing</span><span>🚚 Fast pickup</span><span>🛒 Better market access</span>
+</div>
+<a class="entre-link" href="https://asikurrahaman1.github.io/Fasalmandi/" target="_blank" rel="noopener">Visit Fasal Mandi <span>↗</span></a>
+</div>
+</div>
+</div>
+</section>
+
 <section id="connect" class="connect-section"><div class="section-inner">
-<div class="section-head center"><div class="kicker">05 · Connect</div><h2>Let's stay connected</h2><p>Choose your preferred platform to reach me.</p></div>
+<div class="section-head center"><div class="kicker">06 · Connect</div><h2>Let's stay connected</h2><p>Choose your preferred platform to reach me.</p></div>
 <div class="social-grid">
 <a class="social" href="https://www.facebook.com/share/17aMZhzT8N/" target="_blank" rel="noopener"><span class="social-icon facebook">f</span><div><strong>Facebook</strong><small>Connect on Facebook</small></div></a>
 <a class="social" href="https://wa.me/qr/XYXBON2R4JYWG1" target="_blank" rel="noopener"><span class="social-icon whatsapp">◉</span><div><strong>WhatsApp</strong><small>Start a conversation</small></div></a>
